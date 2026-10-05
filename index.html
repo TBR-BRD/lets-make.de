@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Let's make – Projekte rund um Home Assistant, Solar & Radio</title>
+<meta name="description" content="Open-Source-Projekte von Thoralf Brandt: Home Assistant, Photovoltaik und Balkonkraftwerk, Internetradio, ESP32 und Raspberry Pi. Alle Projekte frei auf GitHub.">
+<link rel="canonical" href="https://www.lets-make.de/">
+<meta property="og:title" content="Let's make – Maker-Projekte">
+<meta property="og:description" content="Home Assistant, Solar, Internetradio, ESP32 und Raspberry Pi – alle Projekte frei auf GitHub.">
+<meta property="og:image" content="https://www.lets-make.de/img/onradio-cover-bridge.jpg">
+<meta property="og:url" content="https://www.lets-make.de/">
+<meta property="og:type" content="website">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="LLM summary">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛠️</text></svg>">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "CollectionPage",
+ "name": "Let's make – Projekte von Thoralf Brandt",
+ "url": "https://www.lets-make.de/",
+ "inLanguage": "de",
+ "author": {
+  "@type": "Person",
+  "name": "Thoralf Brandt",
+  "url": "https://www.lets-make.de/",
+  "sameAs": [
+   "https://github.com/TBR-BRD"
+  ]
+ },
+ "hasPart": [
+  {
+   "@type": "SoftwareSourceCode",
+   "name": "OnRadio Cover Bridge",
+   "description": "Raspberry-Pi-Radio mit Albumcover, Titel, Uhrzeit und Wetter auf dem Display. Gesteuert per Handy, abgespielt auf Sonos, Google Cast oder AirPlay.",
+   "codeRepository": "https://github.com/TBR-BRD/onradio-cover-bridge"
+  },
+  {
+   "@type": "SoftwareSourceCode",
+   "name": "GoogleTV Music Player",
+   "description": "Das gleiche Radioerlebnis als eigenständige App für Google TV und Android TV – ganz ohne Raspberry Pi, mit Ausgabe auf TV, Chromecast oder Sonos.",
+   "codeRepository": "https://github.com/TBR-BRD/googletv-musicplayer"
+  },
+  {
+   "@type": "SoftwareSourceCode",
+   "name": "Cover Music Player",
+   "description": "Chrome-Erweiterung für ON Radio und 80s80s: Programmübersicht mit Albumcovern und ein Player-Tab mit großem Cover.",
+   "codeRepository": "https://github.com/TBR-BRD/cover-music-player"
+  },
+  {
+   "@type": "SoftwareSourceCode",
+   "name": "BBuzzCanvas Cover Kiosk",
+   "description": "Macht aus einem BBuzzCanvas-Bilderrahmen ein Vollbild-Coverdisplay für die OnRadio Cover Bridge.",
+   "codeRepository": "https://github.com/TBR-BRD/bbuzzcanvas-cover-kiosk"
+  },
+  {
+   "@type": "SoftwareSourceCode",
+   "name": "Radio Stations",
+   "description": "Gemeinsamer Senderkatalog für die Radio-Projekte – eine zentrale stations.json, automatisch per GitHub Actions erzeugt.",
+   "codeRepository": "https://github.com/TBR-BRD/radiostations"
+  },
+  {
+   "@type": "SoftwareSourceCode",
+   "name": "BKW Effizienz steigern",
+   "description": "Balkonkraftwerk mit DC-Akku effizienter machen: ein kleiner Wechselrichter für die Grundlast, ein zweiter nur bei Bedarf, geregelt von Home Assistant.",
+   "codeRepository": "https://github.com/TBR-BRD/bkw-effizienz-steigern"
+  },
+  {
+   "@type": "SoftwareSourceCode",
+   "name": "PV-Bitcoin-Miner",
+   "description": "PV-Überschuss statt Einspeisung: Ein Shelly Pro 3EM regelt die Leistung eines Antminers passend zur Sonne – ohne zusätzlichen Rechner.",
+   "codeRepository": "https://github.com/TBR-BRD/pv-bitcoin-miner"
+  },
+  {
+   "@type": "SoftwareSourceCode",
+   "name": "PV 3070 NiceHash Controller",
+   "description": "Die PC-Variante: Eine RTX 3070 mit NiceHash läuft nur bei PV-Überschuss, mit Leistungsbegrenzung und Temperaturschutz.",
+   "codeRepository": "https://github.com/TBR-BRD/pv-3070-nicehash"
+  },
+  {
+   "@type": "SoftwareSourceCode",
+   "name": "Rundes PV- & Wetterdisplay",
+   "description": "Rundes ESP32-Display zeigt PV-Leistung, Akkustand, Netzbezug, Uhrzeit und Wetter auf einen Blick.",
+   "codeRepository": "https://github.com/TBR-BRD/ha-round-pv-weather-display"
+  },
+  {
+   "@type": "SoftwareSourceCode",
+   "name": "Wohnmobil-Touren",
+   "description": "Erkennt Wohnmobil-Reisen automatisch aus GPS-Daten, legt sie auf die Straßenkarte und zeigt alle Touren farbig in Home Assistant.",
+   "codeRepository": "https://github.com/TBR-BRD/wohnmobil-touren-homeassistant"
+  },
+  {
+   "@type": "SoftwareSourceCode",
+   "name": "Gewitterwarner GW1",
+   "description": "Bindet den Gewitterwarner GW1 über einen Shelly UNI in Home Assistant ein – mit Dashboard, Blitzrate und Benachrichtigungen.",
+   "codeRepository": "https://github.com/TBR-BRD/gewitterwarner-gw1-shelly-uni-homeassistant"
+  },
+  {
+   "@type": "SoftwareSourceCode",
+   "name": "ACTION 32×32 LED-Display",
+   "description": "Das günstige 32×32-LED-Panel von ACTION als Infodisplay für Home Assistant: Uhrzeit, Wetter und Sensorwerte in Pixelschrift.",
+   "codeRepository": "https://github.com/TBR-BRD/ha-action-32x32-led"
+  },
+  {
+   "@type": "SoftwareSourceCode",
+   "name": "SafeTurn",
+   "description": "Prototyp einer Abbiegewarnung für LKW: Smartphones von Fahrer und Radfahrer melden ihre Position per Bluetooth an einen ESP32, der rechtzeitig warnt.",
+   "codeRepository": "https://github.com/TBR-BRD/safeturn"
+  },
+  {
+   "@type": "SoftwareSourceCode",
+   "name": "SensIR",
+   "description": "„Babyphone für Senioren ohne Bild und Ton“: Sensoren erkennen den Alltag, bleibt Aktivität aus, bekommen Angehörige eine Telegram-Nachricht.",
+   "codeRepository": "https://github.com/TBR-BRD/sensir"
+  },
+  {
+   "@type": "SoftwareSourceCode",
+   "name": "Morse Light Webapp",
+   "description": "Morsen mit Licht zwischen zwei iPhones – senden per Bildschirm oder LED, empfangen und live entschlüsseln mit der Kamera. Ohne App-Installation.",
+   "codeRepository": "https://github.com/TBR-BRD/morse-light-webapp"
+  }
+ ]
+}
+</script>
+<style>
+:root{
+  --bg:#f6f3ee; --paper:#fffdf9; --ink:#1d1b18; --muted:#6b655c; --line:#e3ddd2;
+  --accent:#e0601b; --accent-ink:#fff; --tag:#efe9df;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#14130f; --paper:#1d1b17; --ink:#f1ece4; --muted:#a39b8e; --line:#2f2c26;
+    --accent:#ff7a33; --accent-ink:#14130f; --tag:#2a2721; }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+header.hero{padding:72px 0 40px;border-bottom:1px solid var(--line)}
+.kicker{font:600 13px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:clamp(44px,8vw,88px);line-height:.95;margin:14px 0 18px;letter-spacing:-.03em;font-weight:800}
+h1 span{color:var(--accent)}
+.lead{font-size:clamp(17px,2.2vw,20px);max-width:680px;color:var(--muted);margin:0 0 26px}
+.lead strong{color:var(--ink);font-weight:600}
+.hero-links{display:flex;gap:12px;flex-wrap:wrap}
+.en{margin:22px 0 0;font-size:14px;color:var(--muted);max-width:680px}
+
+nav.cats{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav.cats .wrap{display:flex;gap:6px;overflow-x:auto;padding-top:10px;padding-bottom:10px;scrollbar-width:none}
+nav.cats a{white-space:nowrap;text-decoration:none;font-size:14px;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--paper)}
+nav.cats a:hover{border-color:var(--accent);color:var(--accent)}
+
+section.cat{padding:48px 0 8px;scroll-margin-top:60px}
+section.cat h2{font-size:26px;margin:0 0 20px;letter-spacing:-.01em}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;scroll-margin-top:70px;transition:transform .15s,box-shadow .15s}
+.card:hover{transform:translateY(-2px);box-shadow:0 10px 30px -14px rgba(0,0,0,.35)}
+.card:target{outline:2px solid var(--accent)}
+.media{display:block;aspect-ratio:16/10;background:var(--tag);overflow:hidden}
+.media img{width:100%;height:100%;object-fit:cover;display:block}
+.ph{width:100%;height:100%;display:grid;place-items:center;
+  background:repeating-linear-gradient(135deg,var(--tag) 0 12px,transparent 12px 24px)}
+.ph span{font-size:56px}
+.body{padding:18px 18px 20px;display:flex;flex-direction:column;flex:1}
+.body h3{margin:0 0 6px;font-size:19px;letter-spacing:-.01em}
+.body p{margin:0 0 14px;color:var(--muted);font-size:15px}
+.tags{list-style:none;margin:0 0 16px;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.tags li{font:500 12px/1 var(--mono);background:var(--tag);padding:6px 8px;border-radius:6px}
+.links{margin-top:auto;display:flex;gap:8px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;font-weight:600;font-size:14px;padding:9px 14px;border-radius:9px;background:var(--accent);color:var(--accent-ink);border:1px solid var(--accent)}
+.btn:hover{filter:brightness(1.08)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn.ghost:hover{border-color:var(--accent);color:var(--accent)}
+
+.about{margin:64px 0 0;padding:36px 0;border-top:1px solid var(--line);display:grid;gap:24px;grid-template-columns:1fr}
+@media (min-width:760px){.about{grid-template-columns:1fr 1fr}}
+.about h2{margin:0 0 8px;font-size:22px}
+.about p{margin:0;color:var(--muted)}
+footer{padding:24px 0 40px;font-size:14px;color:var(--muted);border-top:1px solid var(--line)}
+footer .wrap{display:flex;gap:18px;flex-wrap:wrap;justify-content:space-between}
+footer nav{display:flex;gap:16px}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">Maker-Projekte · Open Source</div>
+    <h1>Let's make<span>.</span></h1>
+    <p class="lead">Ich baue praktische Dinge rund um <strong>Home Assistant</strong>, <strong>Solarstrom</strong>, <strong>Internetradio</strong> und kleine Bastelprojekte mit <strong>ESP32</strong> und <strong>Raspberry Pi</strong>. Alle 15 Projekte sind frei auf GitHub – zum Nachbauen, Anpassen und Verbessern.</p>
+    <div class="hero-links">
+      <a class="btn" href="https://github.com/TBR-BRD">Alle Projekte auf GitHub</a>
+      <a class="btn ghost" href="https://www.buymeacoffee.com/thoralf.brandt">☕ Einen Kaffee spendieren</a>
+    </div>
+    <p class="en" lang="en"><strong>In English:</strong> Open-source maker projects around Home Assistant, solar power, internet radio, ESP32 and Raspberry Pi. Most projects are documented in English on GitHub.</p>
+  </div>
+</header>
+
+<nav class="cats" aria-label="Kategorien"><div class="wrap"><a href="#radio">Radio & Musik</a><a href="#energie">Energie & Photovoltaik</a><a href="#ha">Home Assistant</a><a href="#ideen">Prototypen & Ideen</a></div></nav>
+
+<main class="wrap">
+<section class="cat" id="radio"><h2><span aria-hidden="true">📻</span> Radio & Musik</h2><div class="grid"><article class="card" id="onradio-cover-bridge" data-cat="radio">
+  <a class="media" href="https://github.com/TBR-BRD/onradio-cover-bridge" tabindex="-1"><img src="img/onradio-cover-bridge.jpg" alt="OnRadio Cover Bridge" loading="lazy" width="640" height="400"></a>
+  <div class="body">
+    <h3>OnRadio Cover Bridge</h3>
+    <p>Raspberry-Pi-Radio mit Albumcover, Titel, Uhrzeit und Wetter auf dem Display. Gesteuert per Handy, abgespielt auf Sonos, Google Cast oder AirPlay.</p>
+    <ul class="tags"><li>Raspberry Pi</li><li>Python</li><li>Sonos</li><li>Google Cast</li></ul>
+    <div class="links"><a class="btn" href="https://github.com/TBR-BRD/onradio-cover-bridge">Auf GitHub ansehen</a></div>
+  </div>
+</article>
+<article class="card" id="googletv-musicplayer" data-cat="radio">
+  <a class="media" href="https://github.com/TBR-BRD/googletv-musicplayer" tabindex="-1"><img src="img/googletv-musicplayer.jpg" alt="GoogleTV Music Player" loading="lazy" width="640" height="400"></a>
+  <div class="body">
+    <h3>GoogleTV Music Player</h3>
+    <p>Das gleiche Radioerlebnis als eigenständige App für Google TV und Android TV – ganz ohne Raspberry Pi, mit Ausgabe auf TV, Chromecast oder Sonos.</p>
+    <ul class="tags"><li>Android TV</li><li>Kotlin</li><li>Chromecast</li></ul>
+    <div class="links"><a class="btn" href="https://github.com/TBR-BRD/googletv-musicplayer">Auf GitHub ansehen</a><a class="btn ghost" href="https://github.com/TBR-BRD/googletv-musicplayer/releases/latest">APK herunterladen</a></div>
+  </div>
+</article>
+<article class="card" id="cover-music-player" data-cat="radio">
+  <a class="media" href="https://github.com/TBR-BRD/cover-music-player" tabindex="-1"><img src="img/cover-music-player.jpg" alt="Cover Music Player" loading="lazy" width="640" height="400"></a>
+  <div class="body">
+    <h3>Cover Music Player</h3>
+    <p>Chrome-Erweiterung für ON Radio und 80s80s: Programmübersicht mit Albumcovern und ein Player-Tab mit großem Cover.</p>
+    <ul class="tags"><li>Chrome</li><li>JavaScript</li></ul>
+    <div class="links"><a class="btn" href="https://github.com/TBR-BRD/cover-music-player">Auf GitHub ansehen</a></div>
+  </div>
+</article>
+<article class="card" id="bbuzzcanvas-cover-kiosk" data-cat="radio">
+  <a class="media" href="https://github.com/TBR-BRD/bbuzzcanvas-cover-kiosk" tabindex="-1"><img src="img/bbuzzcanvas-cover-kiosk.jpg" alt="BBuzzCanvas Cover Kiosk" loading="lazy" width="640" height="400"></a>
+  <div class="body">
+    <h3>BBuzzCanvas Cover Kiosk</h3>
+    <p>Macht aus einem BBuzzCanvas-Bilderrahmen ein Vollbild-Coverdisplay für die OnRadio Cover Bridge.</p>
+    <ul class="tags"><li>Android 5.1</li><li>Kiosk</li></ul>
+    <div class="links"><a class="btn" href="https://github.com/TBR-BRD/bbuzzcanvas-cover-kiosk">Auf GitHub ansehen</a></div>
+  </div>
+</article>
+<article class="card" id="radiostations" data-cat="radio">
+  <a class="media" href="https://github.com/TBR-BRD/radiostations" tabindex="-1"><div class="ph" aria-hidden="true"><span>📻</span></div></a>
+  <div class="body">
+    <h3>Radio Stations</h3>
+    <p>Gemeinsamer Senderkatalog für die Radio-Projekte – eine zentrale stations.json, automatisch per GitHub Actions erzeugt.</p>
+    <ul class="tags"><li>JSON</li><li>GitHub Actions</li></ul>
+    <div class="links"><a class="btn" href="https://github.com/TBR-BRD/radiostations">Auf GitHub ansehen</a></div>
+  </div>
+</article></div></section>
+<section class="cat" id="energie"><h2><span aria-hidden="true">☀️</span> Energie & Photovoltaik</h2><div class="grid"><article class="card" id="bkw-effizienz-steigern" data-cat="energie">
+  <a class="media" href="https://github.com/TBR-BRD/bkw-effizienz-steigern" tabindex="-1"><img src="img/bkw-effizienz-steigern.jpg" alt="BKW Effizienz steigern" loading="lazy" width="640" height="400"></a>
+  <div class="body">
+    <h3>BKW Effizienz steigern</h3>
+    <p>Balkonkraftwerk mit DC-Akku effizienter machen: ein kleiner Wechselrichter für die Grundlast, ein zweiter nur bei Bedarf, geregelt von Home Assistant.</p>
+    <ul class="tags"><li>Balkonkraftwerk</li><li>Home Assistant</li><li>LiFePO4</li></ul>
+    <div class="links"><a class="btn" href="https://github.com/TBR-BRD/bkw-effizienz-steigern">Auf GitHub ansehen</a></div>
+  </div>
+</article>
+<article class="card" id="pv-bitcoin-miner" data-cat="energie">
+  <a class="media" href="https://github.com/TBR-BRD/pv-bitcoin-miner" tabindex="-1"><img src="img/pv-bitcoin-miner.jpg" alt="PV-Bitcoin-Miner" loading="lazy" width="640" height="400"></a>
+  <div class="body">
+    <h3>PV-Bitcoin-Miner</h3>
+    <p>PV-Überschuss statt Einspeisung: Ein Shelly Pro 3EM regelt die Leistung eines Antminers passend zur Sonne – ohne zusätzlichen Rechner.</p>
+    <ul class="tags"><li>Shelly Pro 3EM</li><li>Braiins OS+</li><li>Bitcoin</li></ul>
+    <div class="links"><a class="btn" href="https://github.com/TBR-BRD/pv-bitcoin-miner">Auf GitHub ansehen</a></div>
+  </div>
+</article>
+<article class="card" id="pv-3070-nicehash" data-cat="energie">
+  <a class="media" href="https://github.com/TBR-BRD/pv-3070-nicehash" tabindex="-1"><img src="img/pv-3070-nicehash.jpg" alt="PV 3070 NiceHash Controller" loading="lazy" width="640" height="400"></a>
+  <div class="body">
+    <h3>PV 3070 NiceHash Controller</h3>
+    <p>Die PC-Variante: Eine RTX 3070 mit NiceHash läuft nur bei PV-Überschuss, mit Leistungsbegrenzung und Temperaturschutz.</p>
+    <ul class="tags"><li>Python</li><li>NVIDIA</li><li>Shelly Pro 3EM</li></ul>
+    <div class="links"><a class="btn" href="https://github.com/TBR-BRD/pv-3070-nicehash">Auf GitHub ansehen</a></div>
+  </div>
+</article>
+<article class="card" id="ha-round-pv-weather-display" data-cat="energie">
+  <a class="media" href="https://github.com/TBR-BRD/ha-round-pv-weather-display" tabindex="-1"><img src="img/ha-round-pv-weather-display.jpg" alt="Rundes PV- &amp; Wetterdisplay" loading="lazy" width="640" height="400"></a>
+  <div class="body">
+    <h3>Rundes PV- &amp; Wetterdisplay</h3>
+    <p>Rundes ESP32-Display zeigt PV-Leistung, Akkustand, Netzbezug, Uhrzeit und Wetter auf einen Blick.</p>
+    <ul class="tags"><li>ESPHome</li><li>ESP32-S3</li><li>Home Assistant</li></ul>
+    <div class="links"><a class="btn" href="https://github.com/TBR-BRD/ha-round-pv-weather-display">Auf GitHub ansehen</a></div>
+  </div>
+</article></div></section>
+<section class="cat" id="ha"><h2><span aria-hidden="true">🏠</span> Home Assistant</h2><div class="grid"><article class="card" id="wohnmobil-touren-homeassistant" data-cat="ha">
+  <a class="media" href="https://github.com/TBR-BRD/wohnmobil-touren-homeassistant" tabindex="-1"><img src="img/wohnmobil-touren-homeassistant.jpg" alt="Wohnmobil-Touren" loading="lazy" width="640" height="400"></a>
+  <div class="body">
+    <h3>Wohnmobil-Touren</h3>
+    <p>Erkennt Wohnmobil-Reisen automatisch aus GPS-Daten, legt sie auf die Straßenkarte und zeigt alle Touren farbig in Home Assistant.</p>
+    <ul class="tags"><li>Traccar</li><li>Leaflet</li><li>OpenStreetMap</li></ul>
+    <div class="links"><a class="btn" href="https://github.com/TBR-BRD/wohnmobil-touren-homeassistant">Auf GitHub ansehen</a></div>
+  </div>
+</article>
+<article class="card" id="gewitterwarner-gw1-shelly-uni-homeassistant" data-cat="ha">
+  <a class="media" href="https://github.com/TBR-BRD/gewitterwarner-gw1-shelly-uni-homeassistant" tabindex="-1"><div class="ph" aria-hidden="true"><span>⚡</span></div></a>
+  <div class="body">
+    <h3>Gewitterwarner GW1</h3>
+    <p>Bindet den Gewitterwarner GW1 über einen Shelly UNI in Home Assistant ein – mit Dashboard, Blitzrate und Benachrichtigungen.</p>
+    <ul class="tags"><li>Shelly UNI</li><li>Blitzortung</li></ul>
+    <div class="links"><a class="btn" href="https://github.com/TBR-BRD/gewitterwarner-gw1-shelly-uni-homeassistant">Auf GitHub ansehen</a></div>
+  </div>
+</article>
+<article class="card" id="ha-action-32x32-led" data-cat="ha">
+  <a class="media" href="https://github.com/TBR-BRD/ha-action-32x32-led" tabindex="-1"><img src="img/ha-action-32x32-led.jpg" alt="ACTION 32×32 LED-Display" loading="lazy" width="640" height="400"></a>
+  <div class="body">
+    <h3>ACTION 32×32 LED-Display</h3>
+    <p>Das günstige 32×32-LED-Panel von ACTION als Infodisplay für Home Assistant: Uhrzeit, Wetter und Sensorwerte in Pixelschrift.</p>
+    <ul class="tags"><li>Bluetooth</li><li>ESP32</li><li>HACS</li></ul>
+    <div class="links"><a class="btn" href="https://github.com/TBR-BRD/ha-action-32x32-led">Auf GitHub ansehen</a></div>
+  </div>
+</article></div></section>
+<section class="cat" id="ideen"><h2><span aria-hidden="true">💡</span> Prototypen & Ideen</h2><div class="grid"><article class="card" id="safeturn" data-cat="ideen">
+  <a class="media" href="https://github.com/TBR-BRD/safeturn" tabindex="-1"><img src="img/safeturn.jpg" alt="SafeTurn" loading="lazy" width="640" height="400"></a>
+  <div class="body">
+    <h3>SafeTurn</h3>
+    <p>Prototyp einer Abbiegewarnung für LKW: Smartphones von Fahrer und Radfahrer melden ihre Position per Bluetooth an einen ESP32, der rechtzeitig warnt.</p>
+    <ul class="tags"><li>ESP32</li><li>Bluetooth LE</li><li>Verkehrssicherheit</li></ul>
+    <div class="links"><a class="btn" href="https://github.com/TBR-BRD/safeturn">Auf GitHub ansehen</a></div>
+  </div>
+</article>
+<article class="card" id="sensir" data-cat="ideen">
+  <a class="media" href="https://github.com/TBR-BRD/sensir" tabindex="-1"><div class="ph" aria-hidden="true"><span>🫶</span></div></a>
+  <div class="body">
+    <h3>SensIR</h3>
+    <p>„Babyphone für Senioren ohne Bild und Ton“: Sensoren erkennen den Alltag, bleibt Aktivität aus, bekommen Angehörige eine Telegram-Nachricht.</p>
+    <ul class="tags"><li>FastAPI</li><li>MQTT</li><li>Tuya</li><li>Shelly</li></ul>
+    <div class="links"><a class="btn" href="https://github.com/TBR-BRD/sensir">Auf GitHub ansehen</a></div>
+  </div>
+</article>
+<article class="card" id="morse-light-webapp" data-cat="ideen">
+  <a class="media" href="https://github.com/TBR-BRD/morse-light-webapp" tabindex="-1"><img src="img/morse-light-webapp.jpg" alt="Morse Light Webapp" loading="lazy" width="640" height="400"></a>
+  <div class="body">
+    <h3>Morse Light Webapp</h3>
+    <p>Morsen mit Licht zwischen zwei iPhones – senden per Bildschirm oder LED, empfangen und live entschlüsseln mit der Kamera. Ohne App-Installation.</p>
+    <ul class="tags"><li>Web-App</li><li>Kamera</li><li>Optik</li></ul>
+    <div class="links"><a class="btn" href="https://github.com/TBR-BRD/morse-light-webapp">Auf GitHub ansehen</a><a class="btn ghost" href="https://tbr-brd.github.io/morse-light-webapp/">Im Browser ausprobieren</a></div>
+  </div>
+</article></div></section>
+
+  <section class="about">
+    <div>
+      <h2>Mitmachen</h2>
+      <p>Fehler gefunden oder eine Idee? Auf GitHub kannst du in jedem Projekt ein Issue anlegen. Über einen ⭐ freue ich mich – so finden auch andere die Projekte.</p>
+    </div>
+    <div>
+      <h2>Hinweis</h2>
+      <p>Alle Projekte sind Bastel- und Lernprojekte ohne Gewähr. Arbeiten an der Elektroinstallation gehören in die Hände einer Elektrofachkraft.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Thoralf Brandt · lets-make.de</span>
+    <nav><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="https://github.com/TBR-BRD">GitHub</a></nav>
+  </div>
+</footer>
+</body>
+</html>

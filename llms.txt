@@ -1,0 +1,26 @@
+# lets-make.de
+
+> Open-source maker projects by Thoralf Brandt (GitHub: TBR-BRD) around Home Assistant, solar/PV energy, internet radio, ESP32 and Raspberry Pi. Most projects are documented in German and English.
+
+## Radio & Musik
+- [OnRadio Cover Bridge](https://github.com/TBR-BRD/onradio-cover-bridge): Raspberry-Pi-Radio mit Albumcover, Titel, Uhrzeit und Wetter auf dem Display. Gesteuert per Handy, abgespielt auf Sonos, Google Cast oder AirPlay.
+- [GoogleTV Music Player](https://github.com/TBR-BRD/googletv-musicplayer): Das gleiche Radioerlebnis als eigenständige App für Google TV und Android TV – ganz ohne Raspberry Pi, mit Ausgabe auf TV, Chromecast oder Sonos.
+- [Cover Music Player](https://github.com/TBR-BRD/cover-music-player): Chrome-Erweiterung für ON Radio und 80s80s: Programmübersicht mit Albumcovern und ein Player-Tab mit großem Cover.
+- [BBuzzCanvas Cover Kiosk](https://github.com/TBR-BRD/bbuzzcanvas-cover-kiosk): Macht aus einem BBuzzCanvas-Bilderrahmen ein Vollbild-Coverdisplay für die OnRadio Cover Bridge.
+- [Radio Stations](https://github.com/TBR-BRD/radiostations): Gemeinsamer Senderkatalog für die Radio-Projekte – eine zentrale stations.json, automatisch per GitHub Actions erzeugt.
+
+## Energie & Photovoltaik
+- [BKW Effizienz steigern](https://github.com/TBR-BRD/bkw-effizienz-steigern): Balkonkraftwerk mit DC-Akku effizienter machen: ein kleiner Wechselrichter für die Grundlast, ein zweiter nur bei Bedarf, geregelt von Home Assistant.
+- [PV-Bitcoin-Miner](https://github.com/TBR-BRD/pv-bitcoin-miner): PV-Überschuss statt Einspeisung: Ein Shelly Pro 3EM regelt die Leistung eines Antminers passend zur Sonne – ohne zusätzlichen Rechner.
+- [PV 3070 NiceHash Controller](https://github.com/TBR-BRD/pv-3070-nicehash): Die PC-Variante: Eine RTX 3070 mit NiceHash läuft nur bei PV-Überschuss, mit Leistungsbegrenzung und Temperaturschutz.
+- [Rundes PV- & Wetterdisplay](https://github.com/TBR-BRD/ha-round-pv-weather-display): Rundes ESP32-Display zeigt PV-Leistung, Akkustand, Netzbezug, Uhrzeit und Wetter auf einen Blick.
+
+## Home Assistant
+- [Wohnmobil-Touren](https://github.com/TBR-BRD/wohnmobil-touren-homeassistant): Erkennt Wohnmobil-Reisen automatisch aus GPS-Daten, legt sie auf die Straßenkarte und zeigt alle Touren farbig in Home Assistant.
+- [Gewitterwarner GW1](https://github.com/TBR-BRD/gewitterwarner-gw1-shelly-uni-homeassistant): Bindet den Gewitterwarner GW1 über einen Shelly UNI in Home Assistant ein – mit Dashboard, Blitzrate und Benachrichtigungen.
+- [ACTION 32×32 LED-Display](https://github.com/TBR-BRD/ha-action-32x32-led): Das günstige 32×32-LED-Panel von ACTION als Infodisplay für Home Assistant: Uhrzeit, Wetter und Sensorwerte in Pixelschrift.
+
+## Prototypen & Ideen
+- [SafeTurn](https://github.com/TBR-BRD/safeturn): Prototyp einer Abbiegewarnung für LKW: Smartphones von Fahrer und Radfahrer melden ihre Position per Bluetooth an einen ESP32, der rechtzeitig warnt.
+- [SensIR](https://github.com/TBR-BRD/sensir): „Babyphone für Senioren ohne Bild und Ton“: Sensoren erkennen den Alltag, bleibt Aktivität aus, bekommen Angehörige eine Telegram-Nachricht.
+- [Morse Light Webapp](https://github.com/TBR-BRD/morse-light-webapp): Morsen mit Licht zwischen zwei iPhones – senden per Bildschirm oder LED, empfangen und live entschlüsseln mit der Kamera. Ohne App-Installation.

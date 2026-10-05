@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutzerklärung – Let's make</title>
+<meta name="robots" content="noindex, follow">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛠️</text></svg>">
+<style>
+:root{
+  --bg:#f6f3ee; --paper:#fffdf9; --ink:#1d1b18; --muted:#6b655c; --line:#e3ddd2;
+  --accent:#e0601b; --accent-ink:#fff; --tag:#efe9df;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#14130f; --paper:#1d1b17; --ink:#f1ece4; --muted:#a39b8e; --line:#2f2c26;
+    --accent:#ff7a33; --accent-ink:#14130f; --tag:#2a2721; }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+header.hero{padding:72px 0 40px;border-bottom:1px solid var(--line)}
+.kicker{font:600 13px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:clamp(44px,8vw,88px);line-height:.95;margin:14px 0 18px;letter-spacing:-.03em;font-weight:800}
+h1 span{color:var(--accent)}
+.lead{font-size:clamp(17px,2.2vw,20px);max-width:680px;color:var(--muted);margin:0 0 26px}
+.lead strong{color:var(--ink);font-weight:600}
+.hero-links{display:flex;gap:12px;flex-wrap:wrap}
+.en{margin:22px 0 0;font-size:14px;color:var(--muted);max-width:680px}
+
+nav.cats{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav.cats .wrap{display:flex;gap:6px;overflow-x:auto;padding-top:10px;padding-bottom:10px;scrollbar-width:none}
+nav.cats a{white-space:nowrap;text-decoration:none;font-size:14px;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--paper)}
+nav.cats a:hover{border-color:var(--accent);color:var(--accent)}
+
+section.cat{padding:48px 0 8px;scroll-margin-top:60px}
+section.cat h2{font-size:26px;margin:0 0 20px;letter-spacing:-.01em}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;scroll-margin-top:70px;transition:transform .15s,box-shadow .15s}
+.card:hover{transform:translateY(-2px);box-shadow:0 10px 30px -14px rgba(0,0,0,.35)}
+.card:target{outline:2px solid var(--accent)}
+.media{display:block;aspect-ratio:16/10;background:var(--tag);overflow:hidden}
+.media img{width:100%;height:100%;object-fit:cover;display:block}
+.ph{width:100%;height:100%;display:grid;place-items:center;
+  background:repeating-linear-gradient(135deg,var(--tag) 0 12px,transparent 12px 24px)}
+.ph span{font-size:56px}
+.body{padding:18px 18px 20px;display:flex;flex-direction:column;flex:1}
+.body h3{margin:0 0 6px;font-size:19px;letter-spacing:-.01em}
+.body p{margin:0 0 14px;color:var(--muted);font-size:15px}
+.tags{list-style:none;margin:0 0 16px;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.tags li{font:500 12px/1 var(--mono);background:var(--tag);padding:6px 8px;border-radius:6px}
+.links{margin-top:auto;display:flex;gap:8px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;font-weight:600;font-size:14px;padding:9px 14px;border-radius:9px;background:var(--accent);color:var(--accent-ink);border:1px solid var(--accent)}
+.btn:hover{filter:brightness(1.08)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn.ghost:hover{border-color:var(--accent);color:var(--accent)}
+
+.about{margin:64px 0 0;padding:36px 0;border-top:1px solid var(--line);display:grid;gap:24px;grid-template-columns:1fr}
+@media (min-width:760px){.about{grid-template-columns:1fr 1fr}}
+.about h2{margin:0 0 8px;font-size:22px}
+.about p{margin:0;color:var(--muted)}
+footer{padding:24px 0 40px;font-size:14px;color:var(--muted);border-top:1px solid var(--line)}
+footer .wrap{display:flex;gap:18px;flex-wrap:wrap;justify-content:space-between}
+footer nav{display:flex;gap:16px}
+
+.legal{max-width:720px;padding:48px 0 64px}
+.legal h1{font-size:clamp(36px,6vw,56px);margin:10px 0 28px}
+.legal h2{font-size:20px;margin:34px 0 8px}
+.legal h3{font-size:16px;margin:22px 0 6px}
+.legal p,.legal li{color:var(--muted)}
+.legal p strong,.legal li strong{color:var(--ink)}
+.legal a{color:var(--accent)}
+.todo{background:#ffe9a8;color:#3a2d00;padding:1px 5px;border-radius:4px;font-family:var(--mono);font-size:.9em}
+.back{display:inline-block;margin-top:8px;font:600 13px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--accent);text-decoration:none}
+</style>
+</head>
+<body>
+<main class="wrap"><article class="legal">
+<a class="back" href="./">← Zurück zu den Projekten</a>
+<h1>Datenschutzerklärung</h1>
+
+<h2>1. Verantwortlicher</h2>
+<p>Verantwortlich für die Datenverarbeitung auf dieser Webseite ist:<br>
+<strong>Thoralf Brandt</strong>, Am Schlaggraben 9, 14612 Falkensee<br>
+E-Mail: <a href="mailto:info@lets-make.de">info@lets-make.de</a></p>
+
+<h2>2. Das Wichtigste in Kürze</h2>
+<p>Diese Webseite ist eine rein statische Seite. Sie verwendet <strong>keine Cookies</strong>, <strong>kein Tracking</strong>, <strong>keine Analyse-Tools</strong>, <strong>keine Kontaktformulare</strong> und lädt <strong>keine Inhalte von fremden Servern</strong> (keine externen Schriftarten, Skripte oder eingebetteten Videos). Alle Bilder und Dateien werden direkt mit der Seite ausgeliefert.</p>
+
+<h2>3. Hosting über GitHub Pages</h2>
+<p>Diese Webseite wird über den Dienst <strong>GitHub Pages</strong> ausgeliefert. Anbieter ist die GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. Beim Aufruf der Seite verarbeitet GitHub automatisch Informationen, die dein Browser übermittelt, insbesondere:</p>
+<ul>
+<li>IP-Adresse</li>
+<li>Datum und Uhrzeit des Zugriffs</li>
+<li>aufgerufene Datei und übertragene Datenmenge</li>
+<li>Referrer-URL (die zuvor besuchte Seite)</li>
+<li>verwendeter Browser und Betriebssystem</li>
+</ul>
+<p>Diese Daten sind technisch erforderlich, um die Seite auszuliefern und ihre Sicherheit und Stabilität zu gewährleisten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer sicheren, kostengünstigen Bereitstellung der Seite). Ich selbst habe keinen Zugriff auf diese Daten und werte sie nicht aus.</p>
+<p>Die Daten können in die USA übertragen werden. GitHub ist nach dem EU-U.S. Data Privacy Framework zertifiziert; damit besteht für die Übermittlung ein Angemessenheitsbeschluss der EU-Kommission (Art. 45 DSGVO). Näheres in der <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung von GitHub</a>.</p>
+
+<h2>4. Kontakt per E-Mail</h2>
+<p>Wenn du mir eine E-Mail schreibst, verarbeite ich deine Angaben ausschließlich zur Bearbeitung deiner Anfrage (Art. 6 Abs. 1 lit. f DSGVO). Das E-Mail-Postfach wird bei der goneo Internet GmbH, Dresdener Straße 18, 32423 Minden betrieben, mit der ein Vertrag zur Auftragsverarbeitung nach Art. 28 DSGVO besteht. Die Daten werden gelöscht, sobald die Anfrage erledigt ist und keine gesetzlichen Aufbewahrungspflichten bestehen.</p>
+
+<h2>5. Links zu anderen Webseiten</h2>
+<p>Diese Seite verlinkt auf Projektseiten bei GitHub und auf Buy Me a Coffee. Erst wenn du einen solchen Link anklickst, verlässt du diese Seite, und es gelten die Datenschutzbestimmungen des jeweiligen Anbieters. Vorher werden keine Daten an diese Anbieter übertragen.</p>
+
+<h2>6. Deine Rechte</h2>
+<p>Du hast jederzeit das Recht auf</p>
+<ul>
+<li>Auskunft über deine gespeicherten Daten (Art. 15 DSGVO),</li>
+<li>Berichtigung unrichtiger Daten (Art. 16 DSGVO),</li>
+<li>Löschung (Art. 17 DSGVO) und Einschränkung der Verarbeitung (Art. 18 DSGVO),</li>
+<li>Datenübertragbarkeit (Art. 20 DSGVO),</li>
+<li>Widerspruch gegen die Verarbeitung auf Grundlage berechtigter Interessen (Art. 21 DSGVO).</li>
+</ul>
+<p>Außerdem kannst du dich bei einer Datenschutz-Aufsichtsbehörde beschweren, zuständig ist: Die Landesbeauftragte für den Datenschutz und für das Recht auf Akteneinsicht Brandenburg, Stahnsdorfer Damm 77, 14532 Kleinmachnow, <a href="https://www.lda.brandenburg.de">www.lda.brandenburg.de</a>.</p>
+
+<h2>7. Stand</h2>
+<p>Oktober 2026</p>
+
+</article></main>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Thoralf Brandt · lets-make.de</span>
+    <nav><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="https://github.com/TBR-BRD">GitHub</a></nav>
+  </div>
+</footer>
+</body>
+</html>
