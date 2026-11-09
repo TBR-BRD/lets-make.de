@@ -85,9 +85,21 @@
   },
   {
    "@type": "SoftwareSourceCode",
+   "name": "Stromzähler in Home Assistant",
+   "description": "Netzbezug, Einspeisung und PV-Erzeugung per Lesekopf und ESP32 mit Tasmota – kabelgebunden ins Energie-Dashboard von Home Assistant.",
+   "codeRepository": "https://github.com/TBR-BRD/homeassistant-stromzaehler"
+  },
+  {
+   "@type": "SoftwareSourceCode",
    "name": "Wohnmobil-Touren",
    "description": "Erkennt Wohnmobil-Reisen automatisch aus GPS-Daten, legt sie auf die Straßenkarte und zeigt alle Touren farbig in Home Assistant.",
    "codeRepository": "https://github.com/TBR-BRD/wohnmobil-touren-homeassistant"
+  },
+  {
+   "@type": "SoftwareSourceCode",
+   "name": "Digitale Wasserwaage fürs Wohnmobil",
+   "description": "Zeigt in Home Assistant, wie schief das Wohnmobil steht und wie viele Zentimeter Keil unter welches Rad gehören – mit Rück-, Seiten- und Draufsicht.",
+   "codeRepository": "https://github.com/TBR-BRD/digitale-wasserwaage-wohnmobil-homeassistant"
   },
   {
    "@type": "SoftwareSourceCode",
@@ -118,6 +130,18 @@
    "name": "Morse Light Webapp",
    "description": "Morsen mit Licht zwischen zwei iPhones – senden per Bildschirm oder LED, empfangen und live entschlüsseln mit der Kamera. Ohne App-Installation.",
    "codeRepository": "https://github.com/TBR-BRD/morse-light-webapp"
+  },
+  {
+   "@type": "SoftwareSourceCode",
+   "name": "CYD-Wetterdisplay",
+   "description": "Wetterdisplay auf dem günstigen ESP32 „Cheap Yellow Display“: 2,8-Zoll-Touchscreen mit aktuellem Wetter und Vorhersage, auf Deutsch angepasst.",
+   "codeRepository": "https://github.com/TBR-BRD/esp32-cyd-wetterdisplay"
+  },
+  {
+   "@type": "SoftwareSourceCode",
+   "name": "Magnetfeld-Messung",
+   "description": "Web-App für einfache Störungstests mit dem Kompass des Smartphones – läuft im Browser, Messwerte bleiben lokal und lassen sich als CSV speichern.",
+   "codeRepository": "https://github.com/TBR-BRD/magnetfeld-messung-iphone"
   }
  ]
 }
@@ -189,7 +213,7 @@ footer nav{display:flex;gap:16px}
   <div class="wrap">
     <div class="kicker">Maker-Projekte · Open Source</div>
     <h1>Let's make<span>.</span></h1>
-    <p class="lead">Ich baue praktische Dinge rund um <strong>Home Assistant</strong>, <strong>Solarstrom</strong>, <strong>Internetradio</strong> und kleine Bastelprojekte mit <strong>ESP32</strong> und <strong>Raspberry Pi</strong>. Alle 15 Projekte sind frei auf GitHub – zum Nachbauen, Anpassen und Verbessern.</p>
+    <p class="lead">Ich baue praktische Dinge rund um <strong>Home Assistant</strong>, <strong>Solarstrom</strong>, <strong>Internetradio</strong> und kleine Bastelprojekte mit <strong>ESP32</strong> und <strong>Raspberry Pi</strong>. Alle 19 Projekte sind frei auf GitHub – zum Nachbauen, Anpassen und Verbessern.</p>
     <div class="hero-links">
       <a class="btn" href="https://github.com/TBR-BRD">Alle Projekte auf GitHub</a>
       <a class="btn ghost" href="https://www.buymeacoffee.com/thoralf.brandt">☕ Einen Kaffee spendieren</a>
@@ -281,6 +305,15 @@ footer nav{display:flex;gap:16px}
     <ul class="tags"><li>ESPHome</li><li>ESP32-S3</li><li>Home Assistant</li></ul>
     <div class="links"><a class="btn" href="https://github.com/TBR-BRD/ha-round-pv-weather-display">Auf GitHub ansehen</a></div>
   </div>
+</article>
+<article class="card" id="homeassistant-stromzaehler" data-cat="energie">
+  <a class="media" href="https://github.com/TBR-BRD/homeassistant-stromzaehler" tabindex="-1"><div class="ph" aria-hidden="true"><span>🔌</span></div></a>
+  <div class="body">
+    <h3>Stromzähler in Home Assistant</h3>
+    <p>Netzbezug, Einspeisung und PV-Erzeugung per Lesekopf und ESP32 mit Tasmota – kabelgebunden ins Energie-Dashboard von Home Assistant.</p>
+    <ul class="tags"><li>Tasmota</li><li>ESP32-ETH01</li><li>SML</li><li>Home Assistant</li></ul>
+    <div class="links"><a class="btn" href="https://github.com/TBR-BRD/homeassistant-stromzaehler">Auf GitHub ansehen</a></div>
+  </div>
 </article></div></section>
 <section class="cat" id="ha"><h2><span aria-hidden="true">🏠</span> Home Assistant</h2><div class="grid"><article class="card" id="wohnmobil-touren-homeassistant" data-cat="ha">
   <a class="media" href="https://github.com/TBR-BRD/wohnmobil-touren-homeassistant" tabindex="-1"><img src="img/wohnmobil-touren-homeassistant.jpg" alt="Wohnmobil-Touren" loading="lazy" width="640" height="400"></a>
@@ -289,6 +322,15 @@ footer nav{display:flex;gap:16px}
     <p>Erkennt Wohnmobil-Reisen automatisch aus GPS-Daten, legt sie auf die Straßenkarte und zeigt alle Touren farbig in Home Assistant.</p>
     <ul class="tags"><li>Traccar</li><li>Leaflet</li><li>OpenStreetMap</li></ul>
     <div class="links"><a class="btn" href="https://github.com/TBR-BRD/wohnmobil-touren-homeassistant">Auf GitHub ansehen</a></div>
+  </div>
+</article>
+<article class="card" id="digitale-wasserwaage-wohnmobil-homeassistant" data-cat="ha">
+  <a class="media" href="https://github.com/TBR-BRD/digitale-wasserwaage-wohnmobil-homeassistant" tabindex="-1"><img src="img/digitale-wasserwaage-wohnmobil-homeassistant.jpg" alt="Digitale Wasserwaage fürs Wohnmobil" loading="lazy" width="640" height="400"></a>
+  <div class="body">
+    <h3>Digitale Wasserwaage fürs Wohnmobil</h3>
+    <p>Zeigt in Home Assistant, wie schief das Wohnmobil steht und wie viele Zentimeter Keil unter welches Rad gehören – mit Rück-, Seiten- und Draufsicht.</p>
+    <ul class="tags"><li>Lovelace-Karte</li><li>JavaScript</li><li>Wohnmobil</li></ul>
+    <div class="links"><a class="btn" href="https://github.com/TBR-BRD/digitale-wasserwaage-wohnmobil-homeassistant">Auf GitHub ansehen</a><a class="btn ghost" href="https://tbr-brd.github.io/digitale-wasserwaage-wohnmobil-homeassistant/simulator/">Im Browser ausprobieren</a></div>
   </div>
 </article>
 <article class="card" id="gewitterwarner-gw1-shelly-uni-homeassistant" data-cat="ha">
@@ -334,6 +376,24 @@ footer nav{display:flex;gap:16px}
     <p>Morsen mit Licht zwischen zwei iPhones – senden per Bildschirm oder LED, empfangen und live entschlüsseln mit der Kamera. Ohne App-Installation.</p>
     <ul class="tags"><li>Web-App</li><li>Kamera</li><li>Optik</li></ul>
     <div class="links"><a class="btn" href="https://github.com/TBR-BRD/morse-light-webapp">Auf GitHub ansehen</a><a class="btn ghost" href="https://tbr-brd.github.io/morse-light-webapp/">Im Browser ausprobieren</a></div>
+  </div>
+</article>
+<article class="card" id="esp32-cyd-wetterdisplay" data-cat="ideen">
+  <a class="media" href="https://github.com/TBR-BRD/esp32-cyd-wetterdisplay" tabindex="-1"><img src="img/esp32-cyd-wetterdisplay.jpg" alt="CYD-Wetterdisplay" loading="lazy" width="640" height="400"></a>
+  <div class="body">
+    <h3>CYD-Wetterdisplay</h3>
+    <p>Wetterdisplay auf dem günstigen ESP32 „Cheap Yellow Display“: 2,8-Zoll-Touchscreen mit aktuellem Wetter und Vorhersage, auf Deutsch angepasst.</p>
+    <ul class="tags"><li>ESP32</li><li>Arduino</li><li>OpenWeather</li></ul>
+    <div class="links"><a class="btn" href="https://github.com/TBR-BRD/esp32-cyd-wetterdisplay">Auf GitHub ansehen</a></div>
+  </div>
+</article>
+<article class="card" id="magnetfeld-messung-iphone" data-cat="ideen">
+  <a class="media" href="https://github.com/TBR-BRD/magnetfeld-messung-iphone" tabindex="-1"><img src="img/magnetfeld-messung-iphone.jpg" alt="Magnetfeld-Messung" loading="lazy" width="640" height="400"></a>
+  <div class="body">
+    <h3>Magnetfeld-Messung</h3>
+    <p>Web-App für einfache Störungstests mit dem Kompass des Smartphones – läuft im Browser, Messwerte bleiben lokal und lassen sich als CSV speichern.</p>
+    <ul class="tags"><li>Web-App</li><li>Sensoren</li><li>CSV</li></ul>
+    <div class="links"><a class="btn" href="https://github.com/TBR-BRD/magnetfeld-messung-iphone">Auf GitHub ansehen</a><a class="btn ghost" href="https://tbr-brd.github.io/magnetfeld-messung-iphone/">Im Browser ausprobieren</a></div>
   </div>
 </article></div></section>
 

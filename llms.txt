@@ -14,9 +14,11 @@
 - [PV-Bitcoin-Miner](https://github.com/TBR-BRD/pv-bitcoin-miner): PV-Überschuss statt Einspeisung: Ein Shelly Pro 3EM regelt die Leistung eines Antminers passend zur Sonne – ohne zusätzlichen Rechner.
 - [PV 3070 NiceHash Controller](https://github.com/TBR-BRD/pv-3070-nicehash): Die PC-Variante: Eine RTX 3070 mit NiceHash läuft nur bei PV-Überschuss, mit Leistungsbegrenzung und Temperaturschutz.
 - [Rundes PV- & Wetterdisplay](https://github.com/TBR-BRD/ha-round-pv-weather-display): Rundes ESP32-Display zeigt PV-Leistung, Akkustand, Netzbezug, Uhrzeit und Wetter auf einen Blick.
+- [Stromzähler in Home Assistant](https://github.com/TBR-BRD/homeassistant-stromzaehler): Netzbezug, Einspeisung und PV-Erzeugung per Lesekopf und ESP32 mit Tasmota – kabelgebunden ins Energie-Dashboard von Home Assistant.
 
 ## Home Assistant
 - [Wohnmobil-Touren](https://github.com/TBR-BRD/wohnmobil-touren-homeassistant): Erkennt Wohnmobil-Reisen automatisch aus GPS-Daten, legt sie auf die Straßenkarte und zeigt alle Touren farbig in Home Assistant.
+- [Digitale Wasserwaage fürs Wohnmobil](https://github.com/TBR-BRD/digitale-wasserwaage-wohnmobil-homeassistant): Zeigt in Home Assistant, wie schief das Wohnmobil steht und wie viele Zentimeter Keil unter welches Rad gehören – mit Rück-, Seiten- und Draufsicht. Simulator: https://tbr-brd.github.io/digitale-wasserwaage-wohnmobil-homeassistant/simulator/
 - [Gewitterwarner GW1](https://github.com/TBR-BRD/gewitterwarner-gw1-shelly-uni-homeassistant): Bindet den Gewitterwarner GW1 über einen Shelly UNI in Home Assistant ein – mit Dashboard, Blitzrate und Benachrichtigungen.
 - [ACTION 32×32 LED-Display](https://github.com/TBR-BRD/ha-action-32x32-led): Das günstige 32×32-LED-Panel von ACTION als Infodisplay für Home Assistant: Uhrzeit, Wetter und Sensorwerte in Pixelschrift.
 
@@ -24,3 +26,5 @@
 - [SafeTurn](https://github.com/TBR-BRD/safeturn): Prototyp einer Abbiegewarnung für LKW: Smartphones von Fahrer und Radfahrer melden ihre Position per Bluetooth an einen ESP32, der rechtzeitig warnt.
 - [SensIR](https://github.com/TBR-BRD/sensir): „Babyphone für Senioren ohne Bild und Ton“: Sensoren erkennen den Alltag, bleibt Aktivität aus, bekommen Angehörige eine Telegram-Nachricht.
 - [Morse Light Webapp](https://github.com/TBR-BRD/morse-light-webapp): Morsen mit Licht zwischen zwei iPhones – senden per Bildschirm oder LED, empfangen und live entschlüsseln mit der Kamera. Ohne App-Installation.
+- [CYD-Wetterdisplay](https://github.com/TBR-BRD/esp32-cyd-wetterdisplay): Wetterdisplay auf dem günstigen ESP32 „Cheap Yellow Display“: 2,8-Zoll-Touchscreen mit aktuellem Wetter und Vorhersage, auf Deutsch angepasst.
+- [Magnetfeld-Messung](https://github.com/TBR-BRD/magnetfeld-messung-iphone): Web-App für einfache Störungstests mit dem Kompass des Smartphones – läuft im Browser, Messwerte bleiben lokal und lassen sich als CSV speichern. Web-App: https://tbr-brd.github.io/magnetfeld-messung-iphone/
