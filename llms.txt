@@ -1,32 +1,48 @@
 # lets-make.de
 
-> Open-source maker projects by Thoralf Brandt (GitHub: TBR-BRD) around Home Assistant, solar/PV energy, internet radio, ESP32 and Raspberry Pi. All projects are documented in German and English.
+> Open-source maker projects by Thoralf Brandt (GitHub: TBR-BRD) from Germany – around Home Assistant, solar/PV energy, internet radio, ESP32 and Raspberry Pi. 21 projects, all free on GitHub and documented in German and English (README.md in German, README_EN.md in English).
 
-## Radio & Musik
-- [OnRadio Cover Bridge](https://github.com/TBR-BRD/onradio-cover-bridge): Raspberry-Pi-Radio mit Albumcover, Titel, Uhrzeit und Wetter auf dem Display. Gesteuert per Handy, abgespielt auf Sonos, Google Cast oder AirPlay.
-- [GoogleTV Music Player](https://github.com/TBR-BRD/googletv-musicplayer): Das gleiche Radioerlebnis als eigenständige App für Google TV und Android TV – ganz ohne Raspberry Pi, mit Ausgabe auf TV, Chromecast oder Sonos.
-- [Cover Music Player](https://github.com/TBR-BRD/cover-music-player): Chrome-Erweiterung für ON Radio und 80s80s: Programmübersicht mit Albumcovern und ein Player-Tab mit großem Cover.
-- [BBuzzCanvas Cover Kiosk](https://github.com/TBR-BRD/bbuzzcanvas-cover-kiosk): Macht aus einem BBuzzCanvas-Bilderrahmen ein Vollbild-Coverdisplay für die OnRadio Cover Bridge.
-- [Radio Stations](https://github.com/TBR-BRD/radiostations): Gemeinsamer Senderkatalog für die Radio-Projekte – eine zentrale stations.json, automatisch per GitHub Actions erzeugt.
+lets-make.de is a static overview page (GitHub Pages, no cookies, no tracking) that presents each project with a short description, tags and a link to its GitHub repository. Most projects are practical solutions for the author's own home, solar system and motorhome (Wohnmobil), shared so others can rebuild, adapt and improve them. Many of them are aimed at German setups (German electricity rules, German radio stations, German UI texts), so German terms are given in parentheses where helpful.
 
-## Energie & Photovoltaik
-- [BKW Effizienz steigern](https://github.com/TBR-BRD/bkw-effizienz-steigern): Balkonkraftwerk mit DC-Akku effizienter machen: ein kleiner Wechselrichter für die Grundlast, ein zweiter nur bei Bedarf, geregelt von Home Assistant.
-- [PV-Bitcoin-Miner](https://github.com/TBR-BRD/pv-bitcoin-miner): PV-Überschuss statt Einspeisung: Ein Shelly Pro 3EM regelt die Leistung eines Antminers passend zur Sonne – ohne zusätzlichen Rechner.
-- [PV 3070 NiceHash Controller](https://github.com/TBR-BRD/pv-3070-nicehash): Die PC-Variante: Eine RTX 3070 mit NiceHash läuft nur bei PV-Überschuss, mit Leistungsbegrenzung und Temperaturschutz.
-- [Rundes PV- & Wetterdisplay](https://github.com/TBR-BRD/ha-round-pv-weather-display): Rundes ESP32-Display zeigt PV-Leistung, Akkustand, Netzbezug, Uhrzeit und Wetter auf einen Blick.
-- [Stromzähler in Home Assistant](https://github.com/TBR-BRD/homeassistant-stromzaehler): Netzbezug, Einspeisung und PV-Erzeugung per Lesekopf und ESP32 mit Tasmota – kabelgebunden ins Energie-Dashboard von Home Assistant.
+- Website: https://www.lets-make.de/
+- All repositories: https://github.com/TBR-BRD
+- Support: https://www.buymeacoffee.com/thoralf.brandt
+- Issues and ideas: open an issue in the respective GitHub repository
+
+## Radio & Music (Radio & Musik)
+
+- [OnRadio Cover Bridge](https://github.com/TBR-BRD/onradio-cover-bridge): Raspberry Pi internet radio and information display (Raspberry Pi 3 + official 7-inch touchscreen) showing album cover, title, clock and weather. Controlled from a smartphone via a mobile web controller with an editable station list and stream discovery; audio plays on Sonos/UPnP, Google Cast or AirPlay speakers. Python/FastAPI, kiosk autostart, diagnostics page.
+- [GoogleTV Music Player](https://github.com/TBR-BRD/googletv-musicplayer): Standalone Android TV / Google TV app with the same radio experience as the OnRadio Cover Bridge – no Raspberry Pi needed. Album cover, station, title, clock and weather on the TV, stations selectable with the remote; output to the TV itself, Google Cast/Chromecast or UPnP/DLNA (Sonos). Kotlin; APK download: https://github.com/TBR-BRD/googletv-musicplayer/releases/latest
+- [Cover Music Player](https://github.com/TBR-BRD/cover-music-player): Chrome extension (Manifest V3) for the German radio providers ON Radio and 80s80s. Shows program overviews with album covers and opens a player tab with a large cover, stream playback and volume control. Covers via the iTunes Search API, local cache, no server, no personal data collected.
+- [BBuzzCanvas Cover Kiosk](https://github.com/TBR-BRD/bbuzzcanvas-cover-kiosk): Android 5.1 kiosk app that turns a BBuzzCanvas digital picture frame into a full-screen album cover display for the OnRadio Cover Bridge. WebView in immersive mode, screen always on, autostart after boot, URL configurable by long press; APK built with GitHub Actions.
+- [Radio Stations](https://github.com/TBR-BRD/radiostations): Shared internet radio station catalog for the radio projects – one central stations.json generated from a Python source file and kept up to date automatically by GitHub Actions. Single source of truth for the OnRadio Cover Bridge and the GoogleTV Music Player.
+
+## Energy & Photovoltaics (Energie & Photovoltaik)
+
+- [BKW Efficiency Booster (BKW Effizienz steigern)](https://github.com/TBR-BRD/bkw-effizienz-steigern): Concept and Home Assistant control for a German balcony power plant (Balkonkraftwerk) with a DC battery (LiFePO4). A small 100 VA inverter covers the base load efficiently, a second 600 VA inverter is switched on only when needed, with zero-export control (Nulleinspeisung) within the German 800 VA limit. Includes a Home Assistant blueprint, a HACS-compatible integration, a Python control algorithm and tests.
+- [PV Bitcoin Miner](https://github.com/TBR-BRD/pv-bitcoin-miner): Uses surplus solar power for Bitcoin mining instead of feeding it into the grid. A script running directly on a Shelly Pro 3EM measures the surplus and sets the power target of an Antminer S19K Pro running Braiins OS+ via its REST API, with hysteresis and a built-in 7-day dashboard. Includes a miner comparison and an honest payback calculation.
+- [PV 3070 NiceHash Controller](https://github.com/TBR-BRD/pv-3070-nicehash): The PC variant of the PV miner: a Python service on Windows runs an NVIDIA RTX 3070 with NiceHash Miner only when there is PV surplus (measured by a Shelly Pro 3EM). Dynamic GPU power limit of 100–180 W via nvidia-smi, temperature protection and safe stop on communication errors.
+- [Round PV & Weather Display (Rundes PV- & Wetterdisplay)](https://github.com/TBR-BRD/ha-round-pv-weather-display): Round ESP32-S3 display (Waveshare ESP32-S3-LCD-1.28) with ESPHome and Home Assistant. Rings for current PV power and battery state of charge, grid import/export in the center, daily generation, clock and weather.
+- [Electricity Meter in Home Assistant (Stromzähler)](https://github.com/TBR-BRD/homeassistant-stromzaehler): Reads grid import, grid feed-in and PV generation from German smart meters via an optical reading head (bitShake SmartMeterReader, SML/OBIS) and an ESP32-ETH01 with Tasmota, wired via Ethernet. Sends the values via MQTT to the Home Assistant energy dashboard.
 
 ## Home Assistant
-- [Wohnmobil-Touren](https://github.com/TBR-BRD/wohnmobil-touren-homeassistant): Erkennt Wohnmobil-Reisen automatisch aus GPS-Daten, legt sie auf die Straßenkarte und zeigt alle Touren farbig in Home Assistant.
-- [Digitale Wasserwaage fürs Wohnmobil](https://github.com/TBR-BRD/digitale-wasserwaage-wohnmobil-homeassistant): Zeigt in Home Assistant, wie schief das Wohnmobil steht und wie viele Zentimeter Keil unter welches Rad gehören – mit Rück-, Seiten- und Draufsicht. Simulator: https://tbr-brd.github.io/digitale-wasserwaage-wohnmobil-homeassistant/simulator/
-- [Gewitterwarner GW1](https://github.com/TBR-BRD/gewitterwarner-gw1-shelly-uni-homeassistant): Bindet den Gewitterwarner GW1 über einen Shelly UNI in Home Assistant ein – mit Dashboard, Blitzrate und Benachrichtigungen.
-- [Neff Küche für Home Assistant](https://github.com/TBR-BRD/homeassistant-neff): Schönes deutsches Dashboard für Neff-Backofen, -Geschirrspüler und -Kochfeld über Home Connect – mit Ein-Tipp-Favoriten wie Pizza, Brötchen oder „Spüler in einer Stunde“.
-- [ACTION 32×32 LED-Display](https://github.com/TBR-BRD/ha-action-32x32-led): Das günstige 32×32-LED-Panel von ACTION als Infodisplay für Home Assistant: Uhrzeit, Wetter und Sensorwerte in Pixelschrift.
 
-## Prototypen & Ideen
-- [SafeTurn](https://github.com/TBR-BRD/safeturn): Prototyp einer Abbiegewarnung für LKW: Smartphones von Fahrer und Radfahrer melden ihre Position per Bluetooth an einen ESP32, der rechtzeitig warnt.
-- [SensIR](https://github.com/TBR-BRD/sensir): „Babyphone für Senioren ohne Bild und Ton“: Sensoren erkennen den Alltag, bleibt Aktivität aus, bekommen Angehörige eine Telegram-Nachricht.
-- [Morse Light Webapp](https://github.com/TBR-BRD/morse-light-webapp): Morsen mit Licht zwischen zwei iPhones – senden per Bildschirm oder LED, empfangen und live entschlüsseln mit der Kamera. Ohne App-Installation.
-- [CYD-Wetterdisplay](https://github.com/TBR-BRD/esp32-cyd-wetterdisplay): Wetterdisplay auf dem günstigen ESP32 „Cheap Yellow Display“: 2,8-Zoll-Touchscreen mit aktuellem Wetter und Vorhersage, auf Deutsch angepasst.
-- [Minutenmoment](https://github.com/TBR-BRD/minutenmoment): Deutsche Uhr im LED-Look, die zu jeder Minute einen Fakt zeigt – Geschichte, Kalenderdaten, Mathe und Kurioses. Dazu Datum, Wetter und Schlagzeilen; als Wanduhr installierbar. Web-App: https://tbr-brd.github.io/minutenmoment/
-- [Magnetfeld-Messung](https://github.com/TBR-BRD/magnetfeld-messung-iphone): Web-App für einfache Störungstests mit dem Kompass des Smartphones – läuft im Browser, Messwerte bleiben lokal und lassen sich als CSV speichern. Web-App: https://tbr-brd.github.io/magnetfeld-messung-iphone/
+- [Neff Kitchen for Home Assistant (Neff Küche)](https://github.com/TBR-BRD/homeassistant-neff): Clean dashboard for Neff oven, dishwasher and hob using the official Home Connect integration and Mushroom Cards. One-tap favorites such as pizza, bread rolls or "dishwasher done in one hour", delayed start at 8 am, kitchen timer buttons, and hints for salt/rinse aid or an open door. Shows that favorites from the Neff app are not passed to Home Assistant and rebuilds them as scripts.
+- [Motorhome Trips (Wohnmobil-Touren)](https://github.com/TBR-BRD/wohnmobil-touren-homeassistant): Automatically detects motorhome trips from GPS data in Traccar, separates them by confirmed stays at home and map-matches completed trips to the road network via OSRM/OpenStreetMap. A custom Leaflet Lovelace card shows up to 50 trips in color with renamable trip names. Optional PAJ GPS tracker sync.
+- [Digital Spirit Level for the Motorhome (Digitale Wasserwaage fürs Wohnmobil)](https://github.com/TBR-BRD/digitale-wasserwaage-wohnmobil-homeassistant): Custom Lovelace card that shows how tilted the motorhome is and how many centimeters of leveling ramp (Keil) go under which wheel – rear, side and top view with a bubble level. Configurable for any vehicle via the visual card editor. Try it in the browser: https://tbr-brd.github.io/digitale-wasserwaage-wohnmobil-homeassistant/simulator/
+- [Thunderstorm Warner GW1 (Gewitterwarner GW1)](https://github.com/TBR-BRD/gewitterwarner-gw1-shelly-uni-homeassistant): Integrates the GW1 thunderstorm warner into Home Assistant via a Shelly UNI. Package and dashboard with warning status, all-clear, lightning rate, daily lightning counter and Blitzortung data, plus notification templates.
+- [ACTION 32×32 LED Display](https://github.com/TBR-BRD/ha-action-32x32-led): Turns the inexpensive 32×32 Bluetooth LED panel from the ACTION store (BK Light ACT1026) into an info display for Home Assistant. Patched custom integration with a 3×5 pixel font, centered lines, multi-page automations for time, date, weather and sensor values, and an ESP32 Bluetooth proxy setup.
+
+## Prototypes & Ideas (Prototypen & Ideen)
+
+- [SafeTurn](https://github.com/TBR-BRD/safeturn): Prototype of a right-turn and blind-spot warning for trucks (Abbiegeassistent). The smartphones of the truck driver and the cyclist send GPS position, speed and heading via Bluetooth Low Energy to an ESP32 gateway in the truck, which calculates the risk locally and warns with a buzzer – no cloud, no mobile data. ESP32 firmware (PlatformIO) and iOS apps (SwiftUI). Proof of concept, not approved for road use.
+- [SensIR](https://github.com/TBR-BRD/sensir): "A baby monitor for seniors without picture or sound" (Babyphone für Senioren). Motion sensors and a TV smart plug (Shelly, Tuya/SmartLife or IR bridge) report the everyday activity of an elderly person living alone; if the usual sign of life is missing, relatives get a Telegram message. Learns each household's routine with a machine learning model. FastAPI, Postgres, MQTT, Docker, Home Assistant card; about €35 of hardware per household.
+- [Morse Light Webapp](https://github.com/TBR-BRD/morse-light-webapp): Morse code with light between two iPhones – send via the screen or the LED, receive with the camera and decode live. No app installation, runs in the browser; also demonstrates optical communication and fiber optics. Try it: https://tbr-brd.github.io/morse-light-webapp/
+- [CYD Weather Display (CYD-Wetterdisplay)](https://github.com/TBR-BRD/esp32-cyd-wetterdisplay): Weather display on the inexpensive ESP32 "Cheap Yellow Display" (2.8-inch 320×240 touchscreen) with current conditions and forecast from OpenWeather, adapted to German and the Europe/Berlin time zone. Arduino, flashing script without the Arduino IDE.
+- [Minutenmoment](https://github.com/TBR-BRD/minutenmoment): German clock in LED style that shows a fact for every minute of the day – the time as a year or date in history, events at exactly that time, maths and curiosities (e.g. 21:17 → moon landing). Optional date, weather (Open-Meteo) and German news headlines; installable as a wall clock (PWA), works offline. Try it: https://tbr-brd.github.io/minutenmoment/
+- [Magnetic Field Measurement (Magnetfeld-Messung)](https://github.com/TBR-BRD/magnetfeld-messung-iphone): Web app for simple interference tests with the smartphone's compass. Runs in the browser, readings stay on the device and can be saved as CSV. Try it: https://tbr-brd.github.io/magnetfeld-messung-iphone/
+
+## Optional
+
+- [Legal notice (Impressum)](https://www.lets-make.de/impressum.html)
+- [Privacy policy (Datenschutz)](https://www.lets-make.de/datenschutz.html)
