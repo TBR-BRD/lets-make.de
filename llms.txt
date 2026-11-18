@@ -20,6 +20,7 @@
 - [Wohnmobil-Touren](https://github.com/TBR-BRD/wohnmobil-touren-homeassistant): Erkennt Wohnmobil-Reisen automatisch aus GPS-Daten, legt sie auf die Straßenkarte und zeigt alle Touren farbig in Home Assistant.
 - [Digitale Wasserwaage fürs Wohnmobil](https://github.com/TBR-BRD/digitale-wasserwaage-wohnmobil-homeassistant): Zeigt in Home Assistant, wie schief das Wohnmobil steht und wie viele Zentimeter Keil unter welches Rad gehören – mit Rück-, Seiten- und Draufsicht. Simulator: https://tbr-brd.github.io/digitale-wasserwaage-wohnmobil-homeassistant/simulator/
 - [Gewitterwarner GW1](https://github.com/TBR-BRD/gewitterwarner-gw1-shelly-uni-homeassistant): Bindet den Gewitterwarner GW1 über einen Shelly UNI in Home Assistant ein – mit Dashboard, Blitzrate und Benachrichtigungen.
+- [Neff Küche für Home Assistant](https://github.com/TBR-BRD/homeassistant-neff): Schönes deutsches Dashboard für Neff-Backofen, -Geschirrspüler und -Kochfeld über Home Connect – mit Ein-Tipp-Favoriten wie Pizza, Brötchen oder „Spüler in einer Stunde“.
 - [ACTION 32×32 LED-Display](https://github.com/TBR-BRD/ha-action-32x32-led): Das günstige 32×32-LED-Panel von ACTION als Infodisplay für Home Assistant: Uhrzeit, Wetter und Sensorwerte in Pixelschrift.
 
 ## Prototypen & Ideen
