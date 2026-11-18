@@ -1,6 +1,6 @@
 # lets-make.de
 
-> Open-source maker projects by Thoralf Brandt (GitHub: TBR-BRD) around Home Assistant, solar/PV energy, internet radio, ESP32 and Raspberry Pi. Most projects are documented in German and English.
+> Open-source maker projects by Thoralf Brandt (GitHub: TBR-BRD) around Home Assistant, solar/PV energy, internet radio, ESP32 and Raspberry Pi. All projects are documented in German and English.
 
 ## Radio & Musik
 - [OnRadio Cover Bridge](https://github.com/TBR-BRD/onradio-cover-bridge): Raspberry-Pi-Radio mit Albumcover, Titel, Uhrzeit und Wetter auf dem Display. Gesteuert per Handy, abgespielt auf Sonos, Google Cast oder AirPlay.
