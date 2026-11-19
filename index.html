@@ -31,6 +31,13 @@
  "hasPart": [
   {
    "@type": "SoftwareSourceCode",
+   "name": "Dein Music Browser",
+   "description": "Radio im Browser: rund 300 Sender von ON Radio bis ANTENNE BAYERN mit Albumcover, Titel, Uhrzeit und Wetter. Läuft auf Handy, Tablet und Computer, streamt per AirPlay oder Chromecast und lässt sich als App speichern.",
+   "codeRepository": "https://github.com/TBR-BRD/music-browser",
+   "url": "https://tbr-brd.github.io/music-browser/"
+  },
+  {
+   "@type": "SoftwareSourceCode",
    "name": "OnRadio Cover Bridge",
    "description": "Raspberry-Pi-Radio mit Albumcover, Titel, Uhrzeit und Wetter auf dem Display. Gesteuert per Handy, abgespielt auf Sonos, Google Cast oder AirPlay.",
    "codeRepository": "https://github.com/TBR-BRD/onradio-cover-bridge"
@@ -56,7 +63,7 @@
   {
    "@type": "SoftwareSourceCode",
    "name": "Radio Stations",
-   "description": "Gemeinsamer Senderkatalog für die Radio-Projekte – eine zentrale stations.json, automatisch per GitHub Actions erzeugt.",
+   "description": "Gemeinsamer Senderkatalog für alle Radio-Projekte – eine zentrale stations.json mit rund 300 Sendern, automatisch per GitHub Actions erzeugt.",
    "codeRepository": "https://github.com/TBR-BRD/radiostations"
   },
   {
@@ -232,7 +239,7 @@ footer nav{display:flex;gap:16px}
   <div>
     <div class="kicker">Maker-Projekte · Open Source</div>
     <h1>Let's make<span>.</span></h1>
-    <p class="lead">Ich baue praktische Dinge rund um <strong>Home Assistant</strong>, <strong>Solarstrom</strong>, <strong>Internetradio</strong> und kleine Bastelprojekte mit <strong>ESP32</strong> und <strong>Raspberry Pi</strong>. Alle 21 Projekte sind frei auf GitHub – zum Nachbauen, Anpassen und Verbessern.</p>
+    <p class="lead">Ich baue praktische Dinge rund um <strong>Home Assistant</strong>, <strong>Solarstrom</strong>, <strong>Internetradio</strong> und kleine Bastelprojekte mit <strong>ESP32</strong> und <strong>Raspberry Pi</strong>. Alle 22 Projekte sind frei auf GitHub – zum Nachbauen, Anpassen und Verbessern.</p>
     <div class="hero-links">
       <a class="btn" href="https://github.com/TBR-BRD">Alle Projekte auf GitHub</a>
       <a class="btn ghost" href="https://www.buymeacoffee.com/thoralf.brandt">☕ Einen Kaffee spendieren</a>
@@ -249,7 +256,16 @@ footer nav{display:flex;gap:16px}
 <nav class="cats" aria-label="Kategorien"><div class="wrap"><a href="#radio">Radio & Musik</a><a href="#energie">Energie & Photovoltaik</a><a href="#ha">Home Assistant</a><a href="#ideen">Prototypen & Ideen</a></div></nav>
 
 <main class="wrap">
-<section class="cat" id="radio"><h2><span aria-hidden="true">📻</span> Radio & Musik</h2><div class="grid"><article class="card" id="onradio-cover-bridge" data-cat="radio">
+<section class="cat" id="radio"><h2><span aria-hidden="true">📻</span> Radio & Musik</h2><div class="grid"><article class="card" id="music-browser" data-cat="radio">
+  <a class="media" href="https://tbr-brd.github.io/music-browser/" tabindex="-1"><img src="img/music-browser.jpg" alt="Dein Music Browser" loading="lazy" width="640" height="400"></a>
+  <div class="body">
+    <h3>Dein Music Browser</h3>
+    <p>Radio im Browser: rund 300 Sender von ON Radio bis ANTENNE BAYERN mit Albumcover, Titel, Uhrzeit und Wetter. Läuft auf Handy, Tablet und Computer, streamt per AirPlay oder Chromecast und lässt sich als App speichern.</p>
+    <ul class="tags"><li>Web-App</li><li>JavaScript</li><li>AirPlay</li><li>Chromecast</li></ul>
+    <div class="links"><a class="btn" href="https://github.com/TBR-BRD/music-browser">Auf GitHub ansehen</a><a class="btn ghost" href="https://tbr-brd.github.io/music-browser/">Im Browser ausprobieren</a></div>
+  </div>
+</article>
+<article class="card" id="onradio-cover-bridge" data-cat="radio">
   <a class="media" href="https://github.com/TBR-BRD/onradio-cover-bridge" tabindex="-1"><img src="img/onradio-cover-bridge.jpg" alt="OnRadio Cover Bridge" loading="lazy" width="640" height="400"></a>
   <div class="body">
     <h3>OnRadio Cover Bridge</h3>
@@ -289,7 +305,7 @@ footer nav{display:flex;gap:16px}
   <a class="media" href="https://github.com/TBR-BRD/radiostations" tabindex="-1"><div class="ph" aria-hidden="true"><span>📻</span></div></a>
   <div class="body">
     <h3>Radio Stations</h3>
-    <p>Gemeinsamer Senderkatalog für die Radio-Projekte – eine zentrale stations.json, automatisch per GitHub Actions erzeugt.</p>
+    <p>Gemeinsamer Senderkatalog für alle Radio-Projekte – eine zentrale stations.json mit rund 300 Sendern, automatisch per GitHub Actions erzeugt.</p>
     <ul class="tags"><li>JSON</li><li>GitHub Actions</li></ul>
     <div class="links"><a class="btn" href="https://github.com/TBR-BRD/radiostations">Auf GitHub ansehen</a></div>
   </div>

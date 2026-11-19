@@ -1,6 +1,6 @@
 # lets-make.de
 
-> Open-source maker projects by Thoralf Brandt (GitHub: TBR-BRD) from Germany – around Home Assistant, solar/PV energy, internet radio, ESP32 and Raspberry Pi. 21 projects, all free on GitHub and documented in German and English (README.md in German, README_EN.md in English).
+> Open-source maker projects by Thoralf Brandt (GitHub: TBR-BRD) from Germany – around Home Assistant, solar/PV energy, internet radio, ESP32 and Raspberry Pi. 22 projects, all free on GitHub and documented in German and English (README.md in German, README_EN.md in English).
 
 lets-make.de is a static overview page (GitHub Pages, no cookies, no tracking) that presents each project with a short description, tags and a link to its GitHub repository. Most projects are practical solutions for the author's own home, solar system and motorhome (Wohnmobil), shared so others can rebuild, adapt and improve them. Many of them are aimed at German setups (German electricity rules, German radio stations, German UI texts), so German terms are given in parentheses where helpful.
 
@@ -11,11 +11,12 @@ lets-make.de is a static overview page (GitHub Pages, no cookies, no tracking) t
 
 ## Radio & Music (Radio & Musik)
 
+- [Dein Music Browser (music-browser)](https://github.com/TBR-BRD/music-browser): Internet radio web app for phone, tablet and computer – around 300 German stations from 10 providers (ON Radio, 80s80s, RADIO BOB!, Sunshine Live, HIT RADIO FFH, ENERGY, ANTENNE BAYERN, Absolut Radio, Beats Radio and more) with large album cover, current title, date, clock and weather (Open-Meteo). Streams to AirPlay and Chromecast speakers, full and mobile view with automatic switching, dark/light mode, favorites in the browser, installable as an app (PWA), QR code for sharing. Static site on GitHub Pages; providers that block browser access are read through a small Cloudflare Worker. Try it: https://tbr-brd.github.io/music-browser/
 - [OnRadio Cover Bridge](https://github.com/TBR-BRD/onradio-cover-bridge): Raspberry Pi internet radio and information display (Raspberry Pi 3 + official 7-inch touchscreen) showing album cover, title, clock and weather. Controlled from a smartphone via a mobile web controller with an editable station list and stream discovery; audio plays on Sonos/UPnP, Google Cast or AirPlay speakers. Python/FastAPI, kiosk autostart, diagnostics page.
 - [GoogleTV Music Player](https://github.com/TBR-BRD/googletv-musicplayer): Standalone Android TV / Google TV app with the same radio experience as the OnRadio Cover Bridge – no Raspberry Pi needed. Album cover, station, title, clock and weather on the TV, stations selectable with the remote; output to the TV itself, Google Cast/Chromecast or UPnP/DLNA (Sonos). Kotlin; APK download: https://github.com/TBR-BRD/googletv-musicplayer/releases/latest
 - [Cover Music Player](https://github.com/TBR-BRD/cover-music-player): Chrome extension (Manifest V3) for the German radio providers ON Radio and 80s80s. Shows program overviews with album covers and opens a player tab with a large cover, stream playback and volume control. Covers via the iTunes Search API, local cache, no server, no personal data collected.
 - [BBuzzCanvas Cover Kiosk](https://github.com/TBR-BRD/bbuzzcanvas-cover-kiosk): Android 5.1 kiosk app that turns a BBuzzCanvas digital picture frame into a full-screen album cover display for the OnRadio Cover Bridge. WebView in immersive mode, screen always on, autostart after boot, URL configurable by long press; APK built with GitHub Actions.
-- [Radio Stations](https://github.com/TBR-BRD/radiostations): Shared internet radio station catalog for the radio projects – one central stations.json generated from a Python source file and kept up to date automatically by GitHub Actions. Single source of truth for the OnRadio Cover Bridge and the GoogleTV Music Player.
+- [Radio Stations](https://github.com/TBR-BRD/radiostations): Shared internet radio station catalog for the radio projects – one central stations.json generated from a Python source file and kept up to date automatically by GitHub Actions. Single source of truth for the OnRadio Cover Bridge, the GoogleTV Music Player and Dein Music Browser (around 300 stations).
 
 ## Energy & Photovoltaics (Energie & Photovoltaik)
 
